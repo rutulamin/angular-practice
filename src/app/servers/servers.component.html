@@ -1,0 +1,7 @@
+<!-- <input type="text" (input)="onUpdate($event)"> -->
+<input type="text" [(ngModel)]="servername">
+<p>{{ servername }}</p>
+<button class="btn btn-primary" [disabled]="!allowedServer" (mouseover)="onCreateServer()">Add Server</button>
+<!-- <p [innerHTML]="allowedServer"></p> -->
+<p>{{ allowedServer }}</p>
+<p>{{ servermsg }}</p>
